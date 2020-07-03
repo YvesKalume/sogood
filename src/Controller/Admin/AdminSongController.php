@@ -1,4 +1,10 @@
 <?php
+/**
+ * Copyright (c) 2020.
+ * Yves Kalume
+ * yveskalumenoble@gmail.com
+ */
+
 namespace App\Controller\Admin;
 use App\Entity\Song;
 use App\Form\SongType;
@@ -23,16 +29,16 @@ class AdminSongController extends AbstractController
     }
 
     /**
-     * @Route("/admin/songs",name="admin.songs.index")
+     * @Route("/admin/songs",name="admin.songs.list")
      * @return Response
      */
-    public function index(){
+    public function list(){
         $songs = $this->songRepository->findAll();
         return $this->render("song/list.html.twig",compact("songs"));
     }
 
     /**
-     * @Route("/admin/song/add",name="song.add")
+     * @Route("/admin/song/add",name="admin.song.add")
      * @param Request $request
      * @return Response
      */
@@ -49,7 +55,7 @@ class AdminSongController extends AbstractController
             $em->persist($song);
             $em->flush();
 
-            return $this->redirectToRoute('home');
+            return $this->redirectToRoute('admin.song.add');
         }
 
         return $this->render("song/add.html.twig",[

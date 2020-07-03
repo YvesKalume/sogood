@@ -2,17 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ab66434-f54a-4563-823b-af72693758e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/274c7012-48e0-4794-beaa-26ff4b3358de.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/274c7012-48e0-4794-beaa-26ff4b3358de/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/Yves_Kalume.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/Yves_Kalume.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/e1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/e2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/e3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/e4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/style/js/bootstrap.min.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminSongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminSongController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SongController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Song.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Song.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout/front.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/front.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/song/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/song/add.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/song/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/song/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/song/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/song/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/song/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/song/list.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -198,11 +221,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\web\sogood\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="H:\web\sogood\public" />
+      <recent name="H:\web\sogood\public\adminLTE\plugins\bootstrap" />
+      <recent name="H:\web\sogood\public\adminLTE" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -231,12 +259,24 @@
       <workItem from="1593703205711" duration="3813000" />
       <workItem from="1593713757785" duration="5112000" />
       <workItem from="1593720373097" duration="7546000" />
-      <workItem from="1593757293679" duration="1815000" />
+      <workItem from="1593757293679" duration="2180000" />
+      <workItem from="1593785610847" duration="7254000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
