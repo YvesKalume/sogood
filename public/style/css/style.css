@@ -1,0 +1,101 @@
+body {
+    background-color: #f7f7f7;
+    font-family: "Open Sans","sans-serif";
+}
+
+main {
+    padding: 40px 40px;
+}
+
+h3 {
+    font-size: 34px;
+    margin-bottom: 34px;
+    border-bottom: 4px solid #e6e6e6;
+}
+
+.song-item {
+    margin-bottom: 40px;
+}
+
+.poster {
+    width: 100%;
+    min-height: 250px;
+    position: relative;
+    display: block;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px #3d2173a1;
+    transition: all ease 0.4s;
+
+}
+
+.poster:hover {
+    box-shadow: none;
+    transform: scale(0.98) translateY(5px);
+}
+
+.song-title {
+    font-size: 16px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.singer {
+    font-size: 15px;
+}
+
+.radius-2 {
+    border-radius: 2px;
+}
+
+.single-poster {
+   border: none;
+    width: 100%;
+    padding-left: 0;
+    position: relative;
+}
+
+.single-right-item {
+   margin-top: 5px;
+    border: 1px solid rgba(61, 33, 115, 0.29);
+    overflow: hidden;
+    box-shadow: 0 1px 3px #3d2173a1;
+
+}
+
+.single-right-item:hover {
+    box-shadow: none;
+    transform: scale(0.98) translateY(1px);
+}
+
+.single-right-title {
+    font-size: 14px;
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.single-right-singer {
+    font-size: 13px;
+    margin: 0 0;
+}
+
+.single-right-item div img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+
+.views {
+    font-size: 13px;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .single-right-column .row {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}

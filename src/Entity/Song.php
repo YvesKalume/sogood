@@ -4,9 +4,12 @@ namespace App\Entity;
 
 use App\Repository\SongRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\HttpFoundation\File\File;
 
 /**
  * @ORM\Entity(repositoryClass=SongRepository::class)
+ * @UniqueEntity("title")
  */
 class Song
 {

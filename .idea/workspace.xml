@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ab66434-f54a-4563-823b-af72693758e2" name="Default Changelist" comment="" />
+    <list default="true" id="5ab66434-f54a-4563-823b-af72693758e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/274c7012-48e0-4794-beaa-26ff4b3358de.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/274c7012-48e0-4794-beaa-26ff4b3358de/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminSongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminSongController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SongController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Song.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Song.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/song/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/song/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/song/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/song/index.html.twig" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +69,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -174,12 +189,21 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1e8J71hSmavIhQI294pH21kmAKH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\web\sogood\public" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -205,11 +229,26 @@
       <updated>1593697117514</updated>
       <workItem from="1593697128212" duration="3260000" />
       <workItem from="1593703205711" duration="3813000" />
-      <workItem from="1593713757785" duration="509000" />
+      <workItem from="1593713757785" duration="5112000" />
+      <workItem from="1593720373097" duration="7546000" />
+      <workItem from="1593757293679" duration="1815000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

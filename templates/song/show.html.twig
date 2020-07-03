@@ -1,0 +1,55 @@
+{% extends 'layout/front.html.twig' %}
+
+{% block body %}
+
+    <main>
+        <div class="container-lg">
+
+            <div class="row">
+                <div class="col-lg-8">
+
+                    <div class="container-lg">
+                        <div class="row  pb-4 mb-4">
+                            <div class="col-12 p-0">
+                                <img class="single-poster" src="img/e3.jpg">
+                                <audio class="w-100" src="Mr_Eazi_-_Open_&_Close_(feat._Diplo)_%5BOfficial_Audio%5D(1080p).mp4" controls></audio>
+                            </div>
+                            <div class="col-12">
+                                <h4 class="song-title">{{ song.title }}</h4>
+                                <p class="singer">{{ song.singer }}</p>
+                                <button class="btn btn-primary" >Télecharger</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--right column -->
+                <div class="col-lg-4 single-right-column">
+                    <div>
+                        <h3>Tendances</h3>
+                    </div>
+
+                    <div class="row">
+
+                        <!--right item-->
+                        <div class="col-12">
+                            <div class="row single-right-item p-1">
+                                <div class="col-4">
+                                    <img class="w-100 h-100 radius-2" src="img/e3.jpg">
+                                </div>
+                                <div class="col-8 ">
+                                    <a href="#" class="single-right-title text-decoration-none">Lorem ipsum</a>
+                                    <p class="single-right-singer">Lorem ipsum</p>
+                                    <span class="views mr-4">1000</span><span class="views mr-4">5MB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
