@@ -11,7 +11,7 @@
                     <h5 class="m-0">Featured</h5>
                 </div>
                 <div class="card-body">
-                    <table class="table table-hover">
+                    <table class="table table-hover table-bordered">
                         <thead>
                             <tr>
                                 <td>Titre</td>
@@ -32,7 +32,7 @@
                                 <form method="POST" action="{{ path("song.delete", {id: song.id}) }}" class="d-inline-block">
                                     <input type="hidden" name="_method" value="DELETE">
                                     <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ song.id) }}">
-                                    <button type="submit" class="btn btn-danger btn-sm" onclick="confirm('Etes-vous sûr de vouloir supprimer cette chanson ?')">Supprimer</button>
+                                    <button type="submit" class="btn btn-danger btn-sm">Supprimer</button>
                                 </form>
                             </td>
                         </tr>

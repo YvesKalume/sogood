@@ -94,10 +94,14 @@ class AdminSongController extends AbstractController
      */
     public function delete(Song $song, Request $request) : Response{
 
-        if ($this->isCsrfTokenValid('delete'. $song.getId(),$request->get('token'))){
+        if ($this->isCsrfTokenValid('delete'. $song->getId(), $request->get('token'))){
             $em = $this->getDoctrine()->getManager();
             $em->remove($song);
             $em->flush();
+        }
+
+        else {
+            dd("invalide csrf");
         }
 
         return $this->redirectToRoute("admin.songs.list");
