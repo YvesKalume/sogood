@@ -100,10 +100,6 @@ class AdminSongController extends AbstractController
             $em->flush();
         }
 
-        else {
-            dd("invalide csrf");
-        }
-
         return $this->redirectToRoute("admin.songs.list");
     }
 }

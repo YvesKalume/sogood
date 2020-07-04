@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ab66434-f54a-4563-823b-af72693758e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminSongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminSongController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/dashboard.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/dashboard.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout/admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/admin.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +233,7 @@
       <workItem from="1593785610847" duration="7597000" />
       <workItem from="1593844393276" duration="14249000" />
       <workItem from="1593860116784" duration="132000" />
-      <workItem from="1593863732478" duration="2281000" />
+      <workItem from="1593863732478" duration="2712000" />
     </task>
     <servers />
   </component>
