@@ -32,7 +32,7 @@ class AdminSongController extends AbstractController
      * @Route("/admin/songs",name="admin.songs.list")
      * @return Response
      */
-    public function list(){
+    public function list() : Response{
         $songs = $this->songRepository->findAll();
         return $this->render("song/list.html.twig",compact("songs"));
     }
@@ -42,7 +42,7 @@ class AdminSongController extends AbstractController
      * @param Request $request
      * @return Response
      */
-    public function add(Request $request){
+    public function add(Request $request) : Response{
 
         $song = new Song();
 
@@ -62,6 +62,7 @@ class AdminSongController extends AbstractController
             "song"=>$song,
             "form"=>$form->createView()
         ]);
+
     }
 
 
@@ -71,7 +72,7 @@ class AdminSongController extends AbstractController
      * @param Request $request
      * @return Response
      */
-    public function edit(Song $song,Request $request){
+    public function edit(Song $song,Request $request) : Response{
         $form = $this->createForm(SongType::class,$song);
 
         $form->handleRequest($request);
@@ -83,5 +84,22 @@ class AdminSongController extends AbstractController
             "song"=>$song,
             "form"=>$form->createView()
         ]);
+    }
+
+    /**
+     * @Route("admin/song/{id}/delete", name="song.delete",methods="DELETE")
+     * @param Song $song
+     * @param Request $request
+     * @return RedirectResponse
+     */
+    public function delete(Song $song, Request $request) : Response{
+
+        if ($this->isCsrfTokenValid('delete'. $song.getId(),$request->get('token'))){
+            $em = $this->getDoctrine()->getManager();
+            $em->remove($song);
+            $em->flush();
+        }
+
+        return $this->redirectToRoute("admin.songs.list");
     }
 }

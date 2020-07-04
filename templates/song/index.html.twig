@@ -2,14 +2,21 @@
 
 {% block body %}
 
+
     <main>
-        <div class="container-lg">
-            <div class="row">
 
-                <div class="col-md-12">
-                    <h3>Récents</h3>
+        <div class="container mb-4 mt-4">
+            <form class="row">
+                <div class="col-8 p-0">
+                    <input type="text" class="w-100 h-100 " name="search" id="">
                 </div>
+                <div class="col-4 p-0">
+                    <button type="submit" class="btn btn-primary w-100 h-100">Recherche</button>
+                </div>
+            </form>
+        </div>
 
+        <div class="container-lg">
 
                 <div class="row">
                     {% for song in songs %}
@@ -22,9 +29,6 @@
                     </div>
 
                     {% endfor %}
-
-
-                </div>
             </div>
         </div>
     </main>

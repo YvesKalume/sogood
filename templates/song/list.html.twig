@@ -11,13 +11,35 @@
                     <h5 class="m-0">Featured</h5>
                 </div>
                 <div class="card-body">
-
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <td>Titre</td>
+                                <td>Chanteur</td>
+                                <td>Posté le</td>
+                                <td>Actions</td>
+                            </tr>
+                        </thead>
+                        <tbody>
                     {% for song in songs %}
 
-                        <h2>{{ song.title }}</h2> | <a href="{{ path("song.edit",{id: song.id}) }}">Editer</a>
+                        <tr class="d-table-row">
+                            <td class="d-table-cell">{{ song.title }}</td>
+                            <td class="d-table-cell">{{ song.singer }}</td>
+                            <td class="d-table-cell">{{ song.size }}MB</td>
+                            <td class="d-table-cell">
+                                <a class="btn btn-primary btn-sm" href="{{ path("song.edit",{id: song.id}) }}">Editer</a>
+                                <form method="POST" action="{{ path("song.delete", {id: song.id}) }}" class="d-inline-block">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ song.id) }}">
+                                    <button type="submit" class="btn btn-danger btn-sm" onclick="confirm('Etes-vous sûr de vouloir supprimer cette chanson ?')">Supprimer</button>
+                                </form>
+                            </td>
+                        </tr>
 
                     {% endfor %}
-
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

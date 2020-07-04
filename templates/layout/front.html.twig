@@ -6,27 +6,45 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="UTF-8">
-    <title>{% block title %}SoGood!{% endblock %}</title>
+    <title>{% block title %}SoGood{% endblock %}</title>
     {% block stylesheets %}
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="style/css/style.css">
     {% endblock %}
 </head>
 <body>
-    <header class="container">
-        <div class="nav">
-            <h1 class="navbar-brand">SoGood</h1>
-            <nav class="navbar-nav d-inline">
-                <a href="#" class="nav-item">Home</a>
-                <a href="#" class="nav-item">Home</a>
-                <a href="#" class="nav-item">Home</a>
-            </nav>
+<header class="container mb-4">
+    <nav class="bg-white shadow-sm navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll" href="#page-top">SoGood</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                    aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
+    <!--/ Nav End /-->
+</header>
 
     {% block body %}{% endblock %}
 
     {% block javascripts %}
+        <script src="plugins/jquery/jquery.min.js"></script>
         <script src="plugins/bootstrap/js/bootstrap.js"></script>
     {% endblock %}
 </body>
