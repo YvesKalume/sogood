@@ -59,15 +59,11 @@ h3 {
 .single-right-item {
    margin-top: 5px;
     border: 1px solid rgba(61, 33, 115, 0.29);
-    overflow: hidden;
-    box-shadow: 0 1px 3px #3d2173a1;
+
 
 }
 
-.single-right-item:hover {
-    box-shadow: none;
-    transform: scale(0.98) translateY(1px);
-}
+
 
 .single-right-title {
     font-size: 14px;

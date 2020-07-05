@@ -2,7 +2,9 @@
 
 namespace App\Form;
 
+use App\Entity\Category;
 use App\Entity\Song;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -25,6 +27,10 @@ class SongType extends AbstractType
             ->add('time')
             ->add('size')
             ->add('image')
+            ->add('category',EntityType::class,[
+                'class'=>Category::class,
+                'choice_label'=> 'name'
+            ])
         ;
     }
 

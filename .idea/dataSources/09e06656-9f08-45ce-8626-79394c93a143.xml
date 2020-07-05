@@ -1376,110 +1376,145 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="351" parent="23" name="doctrine_migration_versions">
+    <table id="351" parent="23" name="category">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="352" parent="23" name="doctrine_migration_versions">
       <Collation>utf8_unicode_ci</Collation>
     </table>
-    <table id="352" parent="23" name="song">
+    <table id="353" parent="23" name="song">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="353" parent="23" name="user">
+    <table id="354" parent="23" name="user">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <column id="354" parent="351" name="version">
+    <column id="355" parent="351" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="356" parent="351" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="357" parent="351" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="358" parent="352" name="version">
       <Position>1</Position>
       <DataType>varchar(191)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="355" parent="351" name="executed_at">
+    <column id="359" parent="352" name="executed_at">
       <Position>2</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="356" parent="351" name="execution_time">
+    <column id="360" parent="352" name="execution_time">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="357" parent="351" name="PRIMARY">
+    <key id="361" parent="352" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>version</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="358" parent="352" name="id">
+    <column id="362" parent="353" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="359" parent="352" name="title">
+    <column id="363" parent="353" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="360" parent="352" name="singer">
+    <column id="364" parent="353" name="singer">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="361" parent="352" name="path">
+    <column id="365" parent="353" name="path">
       <Position>4</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="362" parent="352" name="time">
+    <column id="366" parent="353" name="time">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="363" parent="352" name="size">
+    <column id="367" parent="353" name="size">
       <Position>6</Position>
       <DataType>double|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="364" parent="352" name="image">
+    <column id="368" parent="353" name="image">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="365" parent="352" name="created_at">
+    <column id="369" parent="353" name="created_at">
       <Position>8</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="366" parent="352" name="PRIMARY">
+    <column id="370" parent="353" name="category_id">
+      <Position>9</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="371" parent="353" name="IDX_33EDEEA112469DE2">
+      <ColNames>category_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="372" parent="353" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="367" parent="353" name="id">
+    <foreign-key id="373" parent="353" name="FK_33EDEEA112469DE2">
+      <ColNames>category_id</ColNames>
+      <RefTableName>category</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="374" parent="354" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="368" parent="353" name="username">
+    <column id="375" parent="354" name="username">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="369" parent="353" name="password">
+    <column id="376" parent="354" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="370" parent="353" name="PRIMARY">
+    <key id="377" parent="354" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

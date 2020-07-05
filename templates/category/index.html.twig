@@ -1,0 +1,46 @@
+{% extends "layout/admin.html.twig" %}
+
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="card card-primary card-outline">
+                <div class="card-header">
+                    <h5 class="m-0">Featured</h5>
+                </div>
+                <div class="card-body">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                        <tr>
+                            <td>Nom</td>
+                            <td>Chansons</td>
+                            <td>Actions</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for category in categories %}
+
+                            <tr class="d-table-row">
+                                <td class="d-table-cell">{{ category.name }}</td>
+                                <td class="d-table-cell">{{ category.songs.count }}</td>
+                                <td class="d-table-cell">
+                                    <a class="btn btn-primary btn-sm" href="">Editer</a>
+                                    {#<form method="POST" action=" " class="d-inline-block">
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ song.id) }}">
+                                        <button type="submit" class="btn btn-danger btn-sm">Supprimer</button>
+                                    </form>#}
+                                </td>
+                            </tr>
+
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

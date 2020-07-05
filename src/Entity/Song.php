@@ -55,6 +55,12 @@ class Song
      */
     private $created_at;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="songs")
+     */
+    private $category;
+
+
     public function __construct()
     {
         $this->created_at = new \DateTime();
@@ -149,4 +155,17 @@ class Song
 
         return $this;
     }
+
+    public function getCategory(): ?Category
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?Category $category): self
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
 }
