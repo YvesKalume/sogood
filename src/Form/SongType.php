@@ -21,7 +21,7 @@ class SongType extends AbstractType
             ->add('singer',null,[
                 "label"=>"Chanteur"
             ])
-            ->add('path',null,[
+            ->add('songFile',FileType::class,[
                 "label"=>"Fichier"
             ])
             ->add('time')

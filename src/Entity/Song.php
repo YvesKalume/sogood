@@ -40,6 +40,12 @@ class Song
     private $path;
 
     /**
+     * @var File
+     * @Vich\UploadableField(mapping="song_file",fileNameProperty="path")
+     */
+    private $songFile;
+
+    /**
      * @ORM\Column(type="string", length=255)
      */
     private $time;
@@ -204,6 +210,29 @@ class Song
         }
         return $this;
     }
+
+    /**
+     * @return File|null
+     */
+    public function getSongFile(): ?File
+    {
+        return $this->songFile;
+    }
+
+    /**
+     * @param File $songFile
+     * @return Song
+     * @throws Exception
+     */
+    public function setSongFile(File $songFile): Song
+    {
+        $this->songFile = $songFile;
+        if ($this->songFile instanceof UploadedFile){
+            $this->updated_at = new \DateTime('now');
+        }
+        return $this;
+    }
+
 
     public function getUpdatedAt(): ?\DateTimeInterface
     {
