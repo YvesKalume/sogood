@@ -6,6 +6,7 @@ use App\Repository\SongRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Exception;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
@@ -62,6 +63,9 @@ class Song
 
     /**
      * @var File
+     * @Assert\Image(
+     *     mimeTypes="image/jpeg")
+     * )
      * @Vich\UploadableField(mapping="song_image",fileNameProperty="image")
      */
     private $imageFile;
@@ -205,9 +209,11 @@ class Song
     public function setImageFile(File $imageFile): Song
     {
         $this->imageFile = $imageFile;
-        if ($this->imageFile instanceof UploadedFile){
+
+        if ($imageFile instanceof UploadedFile){
             $this->updated_at = new \DateTime('now');
         }
+
         return $this;
     }
 
@@ -227,7 +233,7 @@ class Song
     public function setSongFile(File $songFile): Song
     {
         $this->songFile = $songFile;
-        if ($this->songFile instanceof UploadedFile){
+        if ($songFile instanceof UploadedFile){
             $this->updated_at = new \DateTime('now');
         }
         return $this;

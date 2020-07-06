@@ -4,11 +4,8 @@
     <list default="true" id="5ab66434-f54a-4563-823b-af72693758e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/yveskalume.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/yveskalume.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/songs/images/5f02c99ba25bc184885477.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/songs/images/5f02d18d0348f917635331.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Song.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Song.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/SongType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SongType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/song/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/song/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -221,7 +218,8 @@
       <workItem from="1593863732478" duration="4550000" />
       <workItem from="1593956351027" duration="8618000" />
       <workItem from="1594014959123" duration="3524000" />
-      <workItem from="1594019072869" duration="911000" />
+      <workItem from="1594019072869" duration="5616000" />
+      <workItem from="1594044593671" duration="745000" />
     </task>
     <servers />
   </component>
