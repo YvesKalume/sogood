@@ -26,7 +26,8 @@ class SongType extends AbstractType
             ])
             ->add('time')
             ->add('size')
-            ->add('image')
+            ->add('imageFile',FileType::class)
+
             ->add('category',EntityType::class,[
                 'class'=>Category::class,
                 'choice_label'=> 'name'

@@ -22,7 +22,7 @@
                     {% for song in songs %}
                     <div class="col-lg-3 col-md-4 col-sm-6 song-item">
                         <a href="{{ path("song.show",{id: song.id}) }}">
-                            <img class="poster" src="img/e3.jpg">
+                            <img class="poster" src="{{ vich_uploader_asset(song,'imageFile') }}">
                         </a>
                         <h4 class="song-title">{{ song.title }}</h4>
                         <p class="singer">{{ song.singer }}</p>
