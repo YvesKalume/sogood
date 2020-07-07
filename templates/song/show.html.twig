@@ -17,8 +17,8 @@
                             <div class="col-12">
                                 <h4 class="song-title">{{ song.title }}</h4>
                                 <p class="singer">{{ song.singer }}</p>
-                                <p>{{ song.getTime() }}</p>
-                                <button class="btn btn-primary" >Télecharger</button>
+                                <p>{{ song.time }}</p>
+                                <a href="{{ path('song.download', {id: song.id}) }}" class="btn btn-primary" >Télecharger</a>
                             </div>
                         </div>
 

@@ -27,5 +27,15 @@ class SongController extends AbstractController
         return $this->render('song/show.html.twig',compact('song'));
     }
 
+    /**
+     * @Route("/{id}/download",name="song.download")
+     * @param Song $song
+     * @param DownloadHandler $handler
+     * @return Response
+     */
+    public function download(Song $song,DownloadHandler $handler) : Response {
+        return $handler->downloadObject($song,'songs/files/'. $song->getPath(),null,$song->getTitle());
+    }
+
 
 }

@@ -25,7 +25,6 @@ class SongType extends AbstractType
                 "required"=>false,
                 "label"=>"Fichier"
             ])
-            ->add('size')
             ->add('imageFile',FileType::class,[
                 "required" => false,
                 "label" => 'Image'
