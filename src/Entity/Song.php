@@ -10,6 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use wapmorgan\Mp3Info\Mp3Info;
 
 /**
  * @ORM\Entity(repositoryClass=SongRepository::class)
@@ -47,7 +48,7 @@ class Song
     private $songFile;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string")
      */
     private $time;
 
@@ -133,16 +134,16 @@ class Song
         return $this;
     }
 
-    public function getTime(): ?string
-    {
-        return $this->time;
-    }
-
     public function setTime(string $time): self
     {
         $this->time = $time;
 
         return $this;
+    }
+
+    public function getTime(): ?string
+    {
+        return $this->time;
     }
 
     public function getSize(): ?float

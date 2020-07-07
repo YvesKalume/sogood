@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ab66434-f54a-4563-823b-af72693758e2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/09e06656-9f08-45ce-8626-79394c93a143.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/09e06656-9f08-45ce-8626-79394c93a143.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminSongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminSongController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SongController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Song.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Song.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/SongType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SongType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/song/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/song/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/song/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/song/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +35,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sogood@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sogood@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sogood@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sogood: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -216,7 +240,10 @@
       <workItem from="1593956351027" duration="8618000" />
       <workItem from="1594014959123" duration="3524000" />
       <workItem from="1594019072869" duration="5616000" />
-      <workItem from="1594044593671" duration="1009000" />
+      <workItem from="1594044593671" duration="6159000" />
+      <workItem from="1594058764001" duration="6809000" />
+      <workItem from="1594066755900" duration="618000" />
+      <workItem from="1594114449814" duration="3689000" />
     </task>
     <servers />
   </component>

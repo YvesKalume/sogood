@@ -22,11 +22,14 @@ class SongType extends AbstractType
                 "label"=>"Chanteur"
             ])
             ->add('songFile',FileType::class,[
+                "required"=>false,
                 "label"=>"Fichier"
             ])
-            ->add('time')
             ->add('size')
-            ->add('imageFile',FileType::class)
+            ->add('imageFile',FileType::class,[
+                "required" => false,
+                "label" => 'Image'
+            ])
 
             ->add('category',EntityType::class,[
                 'class'=>Category::class,

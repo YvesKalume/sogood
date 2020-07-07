@@ -16,7 +16,7 @@
                             <tr>
                                 <td>Titre</td>
                                 <td>Chanteur</td>
-                                <td>Posté le</td>
+                                <td>Durée</td>
                                 <td>Actions</td>
                             </tr>
                         </thead>
@@ -26,6 +26,7 @@
                         <tr class="d-table-row">
                             <td class="d-table-cell">{{ song.title }}</td>
                             <td class="d-table-cell">{{ song.singer }}</td>
+                            <td class="d-table-cell">{{ song.time }}</td>
                             <td class="d-table-cell">{{ song.size }}MB</td>
                             <td class="d-table-cell">
                                 <a class="btn btn-primary btn-sm" href="{{ path("song.edit",{id: song.id}) }}">Editer</a>
