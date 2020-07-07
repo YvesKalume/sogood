@@ -38,12 +38,14 @@ class SongInfoSubscriber implements EventSubscriber
             {
                 $mp3info = new Mp3Info($args->getEntity()->getSongFile()->getRealPath());
                 $time = floor($mp3info->duration / 60).':'.floor($mp3info->duration % 60);
+                $audioSize = number_format($mp3info->audioSize / 1048576,2);
             } catch (Exception $e) {
                 echo 'Error time : '.$e->getMessage();
-                $time = "undefined";
+                return;
             };
 
             $args->getEntity()->setTime($time);
+            $args->getEntity()->setSize($audioSize);
         }
 
     }
