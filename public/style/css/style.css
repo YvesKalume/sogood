@@ -37,12 +37,18 @@ h3 {
 .song-title {
     font-size: 16px;
     margin-top: 15px;
+    margin-bottom: 2px;
     text-transform: capitalize;
     font-weight: 600;
 }
 
 .singer {
     font-size: 15px;
+    margin: 2px;
+}
+
+.song-info {
+    margin: 2px;
 }
 
 .radius-2 {
