@@ -14,10 +14,10 @@
                                 <img class="single-poster" src="{{ vich_uploader_asset(song,'imageFile') }}">
                                 <audio class="w-100" src="{{ vich_uploader_asset(song,'songFile') }}" controls></audio>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 p-0">
                                 <h4 class="song-title">{{ song.title }}</h4>
                                 <p class="singer">{{ song.singer }}</p>
-                                <p>{{ song.time }}</p>
+                                <p><i class="fa fa-clock"></i>{{ song.time }}</p>
                                 <a href="{{ path('song.download', {id: song.id}) }}" class="btn btn-primary" >Télecharger</a>
                             </div>
                         </div>

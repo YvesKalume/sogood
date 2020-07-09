@@ -10,6 +10,9 @@
     {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('/plugins/bootstrap/css/bootstrap.css') }}">
         <link rel="stylesheet" href="{{ asset('/style/css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/all.css') }}">
+        <link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/font-awesome.css') }}">
+
     {% endblock %}
 </head>
 <body>
@@ -44,7 +47,7 @@
     {% block body %}{% endblock %}
 
     {% block javascripts %}
-        <script src="{{ asset('/plugins/jquery/jquery.min.js') }}"></script>
+        <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
         <script src="{{ asset('/plugins/bootstrap/js/bootstrap.js') }}"></script>
     {% endblock %}
 </body>
