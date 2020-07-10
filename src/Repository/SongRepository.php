@@ -19,6 +19,16 @@ class SongRepository extends ServiceEntityRepository
         parent::__construct($registry, Song::class);
     }
 
+    /**
+     * @return Song[]
+     */
+    public function findTrendSongs(): array {
+        return $this->createQueryBuilder('s')
+            ->setMaxResults(10)
+            ->getQuery()
+            ->getResult();
+    }
+
     // /**
     //  * @return Song[] Returns an array of Song objects
     //  */

@@ -88,7 +88,7 @@ class AdminSongController extends AbstractController
     }
 
     /**
-     * @Route("admin/song/{id}/delete", name="song.delete",methods="DELETE")
+     * @Route("admin/song/{id}/delete", name="category.delete",methods="DELETE")
      * @param Song $song
      * @param Request $request
      * @return RedirectResponse

@@ -26,12 +26,13 @@
                                 <td class="d-table-cell">{{ category.name }}</td>
                                 <td class="d-table-cell">{{ category.songs.count }}</td>
                                 <td class="d-table-cell">
-                                    <a class="btn btn-primary btn-sm" href="">Editer</a>
-                                    {#<form method="POST" action=" " class="d-inline-block">
+                                    <a class="btn btn-primary btn-sm" href="{{ path('admin.category.edit',{id: category.id}) }}">Editer</a>
+
+                                    <form method="POST" action="{{ path('category.delete',{id: category.id}) }}" class="d-inline-block">
                                         <input type="hidden" name="_method" value="DELETE">
-                                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ song.id) }}">
+                                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ category.id) }}">
                                         <button type="submit" class="btn btn-danger btn-sm">Supprimer</button>
-                                    </form>#}
+                                    </form>
                                 </td>
                             </tr>
 

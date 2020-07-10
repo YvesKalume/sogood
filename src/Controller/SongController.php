@@ -34,7 +34,9 @@ class SongController extends AbstractController
      * @return Response
      */
     public function download(Song $song,DownloadHandler $handler) : Response {
-        return $handler->downloadObject($song,'songs/files/'. $song->getPath(),null,$song->getTitle());
+
+        $filename = $song->getSinger().'_-_'.$song->getTitle().'_www.sogood.com';
+        return $handler->downloadObject($song,'songFile',Song::class,$filename);
     }
 
 

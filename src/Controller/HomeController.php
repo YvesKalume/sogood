@@ -20,7 +20,6 @@ class HomeController extends AbstractController
      * @return Response
      */
     public function index(SongRepository $songRepository) : Response {
-
         $songs = $songRepository->findAll();
         return $this->render('song/index.html.twig',compact('songs'));
     }
