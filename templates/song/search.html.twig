@@ -22,8 +22,11 @@
 
         <div class="container-lg">
 
-                <div class="row">
-                    {% for song in songs %}
+            <div class="row">
+                <div class="col-12">
+                    <p>Chansons trouvée(s) pour <b>{{ search.q }}</b></p>
+                </div>
+                {% for song in songs %}
                     <div class="col-lg-3 col-md-4 col-sm-6 song-item">
                         <a href="{{ path("song.show",{id: song.id}) }}">
                             <img class="poster" src="{{ vich_uploader_asset(song,'imageFile') }}">
@@ -32,7 +35,7 @@
                         <p class="singer">{{ song.singer }}</p>
                     </div>
 
-                    {% endfor %}
+                {% endfor %}
             </div>
         </div>
     </main>

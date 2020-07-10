@@ -20,6 +20,19 @@ class SongRepository extends ServiceEntityRepository
     }
 
     /**
+     * @param $q
+     * @return array
+     */
+    public function searchSongs($q): array {
+        return $this->createQueryBuilder('s')
+            ->orWhere('s.title LIKE :q')
+            ->orWhere('s.singer LIKE :q')
+            ->setParameter('q', '%'.$q.'%')
+            ->getQuery()
+            ->getResult();
+    }
+
+    /**
      * @return Song[]
      */
     public function findTrendSongs(): array {

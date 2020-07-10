@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ab66434-f54a-4563-823b-af72693758e2" name="Default Changelist" comment="" />
+    <list default="true" id="5ab66434-f54a-4563-823b-af72693758e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Form/SongSearchType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Util/SongSearch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/song/search.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/SongRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/SongRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/song/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/song/index.html.twig" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +244,7 @@
       <workItem from="1594066755900" duration="618000" />
       <workItem from="1594114449814" duration="3689000" />
       <workItem from="1594289228401" duration="9532000" />
-      <workItem from="1594410487421" duration="2700000" />
+      <workItem from="1594410487421" duration="8755000" />
     </task>
     <servers />
   </component>
