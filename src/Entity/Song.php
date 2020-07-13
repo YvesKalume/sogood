@@ -86,6 +86,11 @@ class Song
      */
     private $updated_at;
 
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $downloadsNumber = 0;
+
 
     public function __construct()
     {
@@ -249,6 +254,18 @@ class Song
     public function setUpdatedAt(\DateTimeInterface $updated_at): self
     {
         $this->updated_at = $updated_at;
+
+        return $this;
+    }
+
+    public function getDownloadsNumber(): ?int
+    {
+        return $this->downloadsNumber;
+    }
+
+    public function setDownloadsNumber(?int $downloadsNumber): self
+    {
+        $this->downloadsNumber = $downloadsNumber;
 
         return $this;
     }

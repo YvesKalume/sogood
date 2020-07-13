@@ -40,6 +40,10 @@ class SongController extends AbstractController
     public function download(Song $song,DownloadHandler $handler) : Response {
 
         $filename = $song->getSinger().'_-_'.$song->getTitle().'_www.sogood.com';
+        $downloads = $song->getDownloadsNumber() + 1;
+        $song->setDownloadsNumber($downloads);
+        $em = $this->getDoctrine()->getManager();
+        $em->flush();
         return $handler->downloadObject($song,'songFile',Song::class,$filename);
     }
 

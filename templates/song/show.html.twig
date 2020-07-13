@@ -17,7 +17,7 @@
                             <div class="col-12 p-0">
                                 <h4 class="song-title"><i class="fa fa-music"></i> {{ song.title }}</h4>
                                 <p class="singer"><i class="fa fa-user"></i> {{ song.singer }}</p>
-                                <p class="song-info"><i class="fa fa-download"></i> {{ song.time }}</p>
+                                <p class="song-info"><i class="fa fa-download"></i> {{ song.downloadsNumber }}</p>
                                 <p class="song-info"><i class="fa fa-clock"></i> {{ song.time }} | <i class="fa fa-archive"></i> {{ song.size }} MB</p>
                                 <a href="{{ path('song.download', {id: song.id}) }}" class="btn btn-primary" >Télecharger <i class="fa fa-download"></i></a>
                             </div>
