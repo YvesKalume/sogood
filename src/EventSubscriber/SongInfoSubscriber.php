@@ -33,19 +33,19 @@ class SongInfoSubscriber implements EventSubscriber
     public function prePersist(LifecycleEventArgs $args)
     {
         if ($args->getEntity() instanceof Song){
-
             try
             {
                 $mp3info = new Mp3Info($args->getEntity()->getSongFile()->getRealPath());
                 $time = floor($mp3info->duration / 60).':'.floor($mp3info->duration % 60);
                 $audioSize = number_format($mp3info->audioSize / 1048576,2);
             } catch (Exception $e) {
-                echo 'Error time : '.$e->getMessage();
+                echo 'Error song info subscriber : '.$e->getMessage();
                 return;
             };
 
             $args->getEntity()->setTime($time);
             $args->getEntity()->setSize($audioSize);
+
         }
 
     }

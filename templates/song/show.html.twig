@@ -38,9 +38,13 @@
                         <!--right item-->
                         <div class="col-12">
                             <div class="d-inline-flex w-100 single-right-item p-1">
-                                <img class="col-4 float-left radius-2" src="{{ vich_uploader_asset(song,'imageFile') }}">
+                                <div class="col-4">
+                                    <a class="" href="{{ path('song.show', {id: song.id}) }}">
+                                        <img class="w-100 h-100 float-left radius-2" src="{{ vich_uploader_asset(song,'imageFile') }}">
+                                    </a>
+                                </div>
                                 <div class="col-8 ">
-                                    <a href="#" class="single-right-title text-decoration-none">{{ song.title }}</a>
+                                    <a href="{{ path('song.show', {id: song.id}) }}" class="single-right-title text-decoration-none">{{ song.title }}</a>
                                     <p class="single-right-singer">{{ song.singer }}</p>
                                     <span class="views mr-4">1000</span><span class="views mr-4">{{ song.size }}MB</span>
                                 </div>

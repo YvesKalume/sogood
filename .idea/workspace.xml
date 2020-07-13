@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ab66434-f54a-4563-823b-af72693758e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminSongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminSongController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SongController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/SongRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/SongRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/SongInfoSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/SongInfoSubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/song/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/song/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -243,7 +241,7 @@
       <workItem from="1594289228401" duration="9532000" />
       <workItem from="1594410487421" duration="9958000" />
       <workItem from="1594626302625" duration="616000" />
-      <workItem from="1594628963246" duration="1039000" />
+      <workItem from="1594628963246" duration="3482000" />
     </task>
     <servers />
   </component>
