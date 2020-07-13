@@ -21,10 +21,14 @@ class SongController extends AbstractController
     /**
      * @Route("/{id}",name="song.show")
      * @param Song $song
+     * @param SongRepository $songRepository
      * @return Response
      */
-    public function show(Song $song) : Response{
-        return $this->render('song/show.html.twig',compact('song'));
+    public function show(Song $song, SongRepository $songRepository) : Response{
+        return $this->render('song/show.html.twig',[
+            'song' => $song,
+            'trends' => $songRepository->findTrendSongs($song)
+        ]);
     }
 
     /**

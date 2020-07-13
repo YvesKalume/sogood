@@ -33,10 +33,13 @@ class SongRepository extends ServiceEntityRepository
     }
 
     /**
+     * @param Song $song
      * @return Song[]
      */
-    public function findTrendSongs(): array {
+    public function findTrendSongs(Song $song): array {
         return $this->createQueryBuilder('s')
+            ->where('s.category = :c')
+            ->setParameter('c', $song->getCategory())
             ->setMaxResults(10)
             ->getQuery()
             ->getResult();

@@ -34,18 +34,20 @@
 
                     <div class="row">
 
+                        {% for song in trends %}
                         <!--right item-->
                         <div class="col-12">
                             <div class="d-inline-flex w-100 single-right-item p-1">
                                 <img class="col-4 float-left radius-2" src="{{ vich_uploader_asset(song,'imageFile') }}">
                                 <div class="col-8 ">
-                                    <a href="#" class="single-right-title text-decoration-none">Lorem ipsum</a>
-                                    <p class="single-right-singer">Lorem ipsum</p>
-                                    <span class="views mr-4">1000</span><span class="views mr-4">5MB</span>
+                                    <a href="#" class="single-right-title text-decoration-none">{{ song.title }}</a>
+                                    <p class="single-right-singer">{{ song.singer }}</p>
+                                    <span class="views mr-4">1000</span><span class="views mr-4">{{ song.size }}MB</span>
                                 </div>
                             </div>
                         </div>
                         <!--end item-->
+                        {% endfor %}
                     </div>
                 </div>
             </div>
