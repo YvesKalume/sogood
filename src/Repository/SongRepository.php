@@ -40,6 +40,7 @@ class SongRepository extends ServiceEntityRepository
         return $this->createQueryBuilder('s')
             ->where('s.category = :c')
             ->setParameter('c', $song->getCategory())
+            ->orderBy('s.downloadsNumber','DESC')
             ->setMaxResults(10)
             ->getQuery()
             ->getResult();
